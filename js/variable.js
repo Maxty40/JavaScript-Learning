@@ -1,3 +1,4 @@
+prompt("ABCD")
 // Console log in JavaScript
 
 console.log("Hello World!"); // Print Hello World in Console
@@ -16,5 +17,28 @@ let isStudent = true; // Boolean is defined without quotes and can be either tru
 
 let girlFriend = null; // Null is defined without quotes and represents the absence of any value
 
+// If else conditional for girlFriend variable
+if (girlFriend == null) {
+    girlFriend  = 'No'
+}
+else
+{
+    girlFriend = 'A'
+}
+
+// Switch case conditional for more than 1 condition
+// switch(girlFriend){
+//     case 1:
+//         girlFriend = "1"
+//         break
+//     case 2:
+//         girlFriend = "More than 1"
+//         break
+//     default:
+//         girlFriend = "No"
+//         break
+// }
+
 // Alert in JavaScript
 alert(`Hello, my name is ${name}, I am ${age} years old. I live in ${country}. My height is ${height}. That is ${isStudent} I am a student, and I am have ${girlFriend} girlfrined :)`); // Show an alert box
+
