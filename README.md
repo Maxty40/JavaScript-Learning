@@ -6,7 +6,7 @@ This repository is where I record my progress, experiments, and code as I learn 
 ## 🎯 Learning Objectives
 Here, I'm focusing on learning:
 - [x] Basic Syntax & Data Types
-- [ ] DOM Manipulation
+- [x] DOM Manipulation
 - [ ] Asynchronous JavaScript (Promises, Async/Await, Fetch API)
 - [ ] Object-Oriented Programming (OOP) in JS
 
