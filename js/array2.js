@@ -61,16 +61,52 @@ if (includesArray) {
   console.log("That number isn't in array");
 }
 
-
 // Picking first and last data from array
-const firstArray = numArray.shift()
-const lastArray = numArray.pop()
-console.log(`The first data of the array is ${firstArray} and the last is ${lastArray}`)
+const firstArray = numArray.shift();
+const lastArray = numArray.pop();
+console.log(
+  `The first data of the array is ${firstArray} and the last is ${lastArray}`,
+);
 
 // Changing keys of an array
-const fruitArray = []
-fruitArray['Apple'] = 'Apple'
-fruitArray['Mango'] = 'Mango'
+const fruitArray = [];
+fruitArray["Apple"] = "Apple";
+fruitArray["Mango"] = "Mango";
 
 // The length is 0 because the index is string not an ordered number
-console.log(fruitArray)
+console.log(fruitArray);
+
+// Copying an array (safe way)
+const originalArray = ["A", "B", "C", "D", "E"];
+
+copyArray = [...originalArray]; // Or using originalArray.slice(); Array.from(originalArray); JSON.parse(JSON.stringfy(originalArray))
+copyArray[0] = "F";
+
+console.log(originalArray);
+console.log(copyArray);
+
+// Multidimensional Array
+const multiArray = [
+  ["Dhia", "Arfa"],
+  ["Fire", "Fly"],
+  ["Yuki", "Setsuna"],
+];
+
+console.log(multiArray[1][0]);
+
+// Function Array
+const funcArray = [
+  {
+    hello: function () {
+      console.log("Hello World");
+    },
+  },
+  {
+    hi: function () {
+      console.log("Hi!");
+    },
+  }
+];
+
+console.log(funcArray[1].hi)
+funcArray[1].hi()
