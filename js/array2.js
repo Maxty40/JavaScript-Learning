@@ -24,3 +24,27 @@ console.log(theirArray[3])
 
 // Picking an undefined array data
 console.log(theirArray[1])
+
+const numArray = ['1', '2', '3', '4', '5']
+
+// Checking a data is include in array, return true if included, return false if not
+console.log(numArray.includes('2'))
+console.log(numArray.includes('6'))
+
+// Checking a data by index
+console.log(numArray.indexOf('3'))
+
+// Using a variable
+const target = '6'
+const indexArray = numArray.indexOf(target)
+const includesArray = numArray.includes(target)
+
+// Boolean conversion
+const status = includesArray ? 'in' : 'not in'
+
+// Conditional checking
+if (includesArray) {
+    console.log(`The number is ${status} index position ${indexArray}`)
+} else {
+    console.log("That number isn't in array")
+}
