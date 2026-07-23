@@ -110,3 +110,52 @@ const funcArray = [
 
 console.log(funcArray[1].hi)
 funcArray[1].hi()
+
+// Merging Array
+const abcArray = ['Ayu', 'Budi', 'Cahyo']
+const defArray = ['Dhia', 'Eko', 'Fitri']
+
+const mergeArray = abcArray.concat(defArray)
+console.log(mergeArray)
+
+// Break into single piece of data from array
+for (list of mergeArray) console.log(list) // In data (string, int, etc)
+for (list in mergeArray) console.log(list) // In index
+
+// Mapping
+mergeArray.map((value, index) => console.log(value, index))
+
+// Mapping Using Object
+const data = [
+    {
+        name: 'Jhony',
+        age: 18,
+        major: 'Cyber Security',
+    },
+    {
+        name: 'Dhia',
+        age: 21,
+        major: 'Software Development',
+    },
+    {
+        name: 'Ulwan',
+        age: 20,
+        major: 'Machine Learning',
+    },
+    {
+        name: 'Imad',
+        age: 19,
+        major: 'Data Analyst',
+    },
+]
+
+// Showing a values (using values.name if just want the name)
+data.map((values, index) => {
+    console.log(values)
+})
+
+// Sorting
+data.sort ((a, b) => a.age - b.age).map((values) => console.log(values))
+
+// Filtering
+data.filter((x) => x.age >= 20).map((values) => console.log(values))
